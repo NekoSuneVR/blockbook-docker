@@ -16,7 +16,7 @@ fi
 
 function coin_list(){
   if [[ "$1" == "" ]]; then
-    BLOCKBOOKGIT_URL="https://github.com/trezor/blockbook/tree/master/configs/coins"
+    BLOCKBOOKGIT_URL="https://github.com/ChisdealHD-API/blockbook/tree/master/configs/coins"
   else
     BLOCKBOOKGIT_URL="$1"
   fi
@@ -37,7 +37,7 @@ function setup(){
  TAG="$(whiptail --title "BLOCKBOOK DOCKER MANAGER v1.0" --inputbox "Enter your Githab Branch" 8 72 3>&1 1>&2 2>&3)"
  DAEMON_URL="$(whiptail --title "BLOCKBOOK DOCKER MANAGER v1.0" --inputbox "Enter your daemon binary URL" 8 72 3>&1 1>&2 2>&3)"
  if [[ "$BLOCKBOOKGIT_URL" == "" ]]; then
-    BLOCKBOOKGIT_URL="https://github.com/trezor/blockbook.git"
+    BLOCKBOOKGIT_URL="https://github.com/ChisdealHD-API/blockbook.git"
  fi
  if [[ "$TAG" == "" ]]; then
     TAG="master"
